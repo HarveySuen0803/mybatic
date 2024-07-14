@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapper namespace="com.harvey.mybatic.mapper.UserMapper">
+    <select id="selectById" parameterType="java.lang.Long" resultType="com.harvey.mybatic.model.po.UserPo">
+        select * from t_user where id = #{id}
+    </select>
+</mapper>
